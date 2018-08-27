@@ -87,3 +87,14 @@ def generate_password():
     
     #layout 
 
+def main():
+    print("Welcome to password locker....Feel safe to use our services")
+    print("\n")
+    while True:
+        print('*'*150)
+        short_code = input("Use the following short codes: CU- create a new user account,  LN - to log in if you have an account ,  EX - exit from password locker \n ").lower().strip()
+        print ('+'*60)
+
+
+if __name__ == '__main__':
+    main()
