@@ -40,7 +40,7 @@ class Credentials:
         method that checks if a user is logged in
         '''
         for user in Userinfo.user_list:
-            if user.user_name == user_name and user_password == password:
+            if user.user_name == user_name and password == password:
                 return True
             return False
 
@@ -57,7 +57,21 @@ class Credentials:
         '''
         Credentials.credential_list.remove(self)
 
-    
+    @classmethod
+    def display_account(cls):
+        '''
+        method that returns the credetial list
+        '''
+        return cls.credential_list
+
+    def generate_password(self):
+        '''
+        method that generates the passwords for the user
+        '''
+        char = string.ascii_uppercase + string.ascii_lowercase + string.digits + "@#$%^&*"
+
+        gen_pass = "".join(random.choice(char) for _ in range(8))
+
 
 
 
