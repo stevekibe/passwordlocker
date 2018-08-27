@@ -1,5 +1,5 @@
 import unittest
-from user import Userinfo
+from user import Userinfo,Credentials
 
 class TestUserinfo(unittest.TestCase):
     '''

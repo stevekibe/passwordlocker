@@ -26,13 +26,30 @@ class Userinfo:
 
 class Credentials:
     '''
-    class that generates new instances for the class credentials
+    class that generates new instances for the  credentials object
     '''
     credential_list = []#empty object
-    def __init__(self,user_name,password,email):
-        self.user_name = user_name
-        self.password = password
-        self.email = email
+    def __init__(self,account_name, account_username, account_password):
+        self.account_name = account_name
+        self.account_username = account_username
+        self.account_password = account_password
+    
+    @classmethod
+    def check_user_exist(cls,user_name,password):
+        '''
+        method that checks if a user is logged in
+        '''
+        for user in Userinfo.user_list:
+            if Userinfo.user_name == user_name and user_password == password:
+                return True
+            return False
+
+
+    def save_accont(self):
+        '''
+        method that save the account credential
+        '''
+    
         
 
         
