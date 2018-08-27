@@ -40,4 +40,42 @@ def function():
         return Userinfo.display_users()
 
     def login_user(user_name,password):
+        '''
+        method that checks if the user exixts
+        '''
+
+        check_user_exist = Credentials.check_user_exist(user_name,password)
+        return check_user_exist
+
+    def create_credential(account_name, account_username, account_password):
+        '''
+        method to creste new credential
+        '''
+
+        new_credential = Credentials(account_name,account_username,account_password)
+        return new_credential
+
+    def save_credential(credential):
+        '''
+        method to save new credential
+        '''
+        credential.save_credential()
+
+    def delete_account(credential):
+        '''
+        method to delete a credential
+        '''
+
+        credential.delete_account()
+
+    def display_accounts():
+        '''
+        method to display the credentials
+        '''
+        return Credential.display_accounts()
+
+    def generate_password():
+        '''
+        method to generate passwords
+        '''
         
