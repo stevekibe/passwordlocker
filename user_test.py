@@ -29,6 +29,8 @@ class TestUserinfo(unittest.TestCase):
         
         self.new_userinfo.save_userinfo()
         self.assertEqual(len(Userinfo.user_list),1)
+
+
     
 
 if __name__ == '__main__':

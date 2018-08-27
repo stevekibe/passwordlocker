@@ -19,12 +19,21 @@ class Userinfo:
         '''
         Userinfo.user_list.append(self) 
 
-    def tearDown(self):
-        '''
-        method to clean up after each method
-        '''
-        Userinfo.user_list = []
+    @classmethod
+    def display_users(cls):
+        return cls.user_list
 
-    def
+
+class Credentials:
+    '''
+    class that generates new instances for the class credentials
+    '''
+    credential_list = []#empty object
+    def __init__(self,user_name,password,email):
+        self.user_name = user_name
+        self.password = password
+        self.email = email
+        
+
         
           
