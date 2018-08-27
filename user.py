@@ -40,7 +40,7 @@ class Credentials:
         method that checks if a user is logged in
         '''
         for user in Userinfo.user_list:
-            if Userinfo.user_name == user_name and user_password == password:
+            if user.user_name == user_name and user_password == password:
                 return True
             return False
 
@@ -49,7 +49,18 @@ class Credentials:
         '''
         method that save the account credential
         '''
+        Credentials.credential_list.append(self)
+
+    def delete_account(self):
+        '''
+        method to delete the accounut created
+        '''
+        Credentials.credential_list.remove(self)
+
     
+
+
+
         
 
         
