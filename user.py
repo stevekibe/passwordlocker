@@ -64,7 +64,7 @@ class Credentials:
         '''
         return cls.credential_list
 
-    def generate_password(self):
+    def generate_password():
         '''
         method that generates the passwords for the user
         '''
