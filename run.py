@@ -129,15 +129,23 @@ def main():
                         password_option = input("You can choose between: EP- to input existing password GP- to generate new password")
                         print('*'*80)
                         while True:
-                            if password_option == "EP":
-                                account_password = input("Enter your password: ")
-                                break
-                            elif password_option == "GP":
-                                account_password = generate_password()
-                                break
-                            else:
-                                print("Invalid Entry!")
-                                break
+                                if password_option == "EP":
+                                        account_password = input("Enter your password: ")
+                                        break
+                                elif password_option == "GP":
+                                        account_password = generate_password()
+                                        break
+                                else:
+                                        print("Invalid Entry!")
+                                        break
+                                save_profileinfo(create_profileinfo(account_name,account_username, account_password))
+                                print('+'*40)
+                                print(f"New account created: \n Account:{account_name}\n User Name:{account_username}\n Password:{account_password}")
+                                print('*' * 40)
+
+                        
+
+                        
 
 
 
