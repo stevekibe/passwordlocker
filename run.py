@@ -94,6 +94,25 @@ def main():
         print('*'*150)
         short_code = input("Use the following short codes: CU- create a new user account,  LN - to log in if you have an account ,  EX - exit from password locker \n ").lower().strip()
         print ('+'*60)
+        
+        if short_code == "EX":
+                print("Thank you for using password locker will see you again ")
+                break
+        
+        elif short_code == "CA":
+                print("Sign up")
+                print('-'*30)
+                user_name = input("Username: ")
+                password = input("Password: ")
+                email = input("Email: ")
+
+                save_user(create_user(user_name,password,email))
+                print('\n')
+                print(f"{user_name} Your account has been created successfully")
+                
+
+
+
 
 
 if __name__ == '__main__':
