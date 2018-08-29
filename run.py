@@ -109,7 +109,14 @@ def main():
                 save_user(create_user(user_name,password,email))
                 print('\n')
                 print(f"{user_name} Your account has been created successfully")
-                
+
+        elif code == "LN":
+            print("Enter your User name and your password to log in:")  
+            print('*'*30)
+            user_name = input("Username : ")
+            password = input("Password: ")
+            sign_in = login_user(user_name,password)
+            if sign_in == True:
 
 
 
