@@ -126,6 +126,19 @@ def main():
                         account_name = input("Account name \ Site name: ")
                         account_username = input("Site user name: ")
                         print('.'*60)
+                        password_option = input("You can choose between: EP- to input existing password GP- to generate new password")
+                        print('*'*80)
+                        while True:
+                            if password_option == "EP":
+                                account_password = input("Enter your password: ")
+                                break
+                            elif password_option == "GP":
+                                account_password = generate_password()
+                                break
+                            else:
+                                print("Invalid Entry!")
+                                break
+
 
 
 
