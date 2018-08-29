@@ -117,6 +117,15 @@ def main():
             password = input("Password: ")
             sign_in = login_user(user_name,password)
             if sign_in == True:
+                    print(f"{user_name} You are now logged in")
+                while True:
+                    print("Use the follwing to navigate through: CA-to create new account DL- to see the list of your accounts EX - toexit current account")
+                    if code == "CA":
+                        print("Create new account")
+                        print('='*40)
+                        account_name = input("Account name \ Site name: ")
+                        account_username = input("Site user name: ")
+                        print('.'*60)
 
 
 
