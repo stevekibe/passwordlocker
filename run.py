@@ -153,18 +153,15 @@ def main():
                                                                 print('*'*30)
                                                         else:
                                                         print("Sorry ... you do not have an account yet")
+                                                 elif code == "EX":
+                                                        print("it was nice having you")
+                                                        break
+                                                else:
+                                                        print("Invalid Entry!!!")
 
+                else:
+                        print("You do not have an account Use the short code to create a new account")
                                         
-
-
-                        
-
-                        
-
-
-
-
-
 
 if __name__ == '__main__':
     main()
