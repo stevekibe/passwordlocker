@@ -45,7 +45,7 @@ class Credentials:
             return False
 
 
-    def save_accont(self):
+    def save_account(self):
         '''
         method that save the account credential
         '''
