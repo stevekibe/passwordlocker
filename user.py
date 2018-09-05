@@ -72,6 +72,8 @@ class Credentials:
 
         gen_pass = "".join(random.choice(char) for _ in range(8))
 
+        return gen_pass
+
 
 
 
